@@ -1,0 +1,293 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>A Crash Course in Responsive Design</title>
+
+		<meta name="description" content="An introduction to responsive design.">
+		<meta name="author" content="Angelina Fabbro & Jacky Gilbertson">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div class="reveal">
+
+			<!-- Used to fade in a background when a specific slide state is reached -->
+			<div class="state-background"></div>
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>A Crash Course in Responsive Design</h1>
+					<h3 class="inverted">with Angelina Fabbro & Jacky Gilbertson</h3>
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+				</section>
+
+				<section>
+					<h2>WELCOME</h2>
+					<p>Maybe a picture here? Hm.</p>
+				<aside class="notes">
+					<p>Stuff to mention..</p>
+					<p>Schedule: First hour is lecture, then a break, then hands-on walkthrough</p>
+					<p>Tutorial materials: Explain what everybody has in front of them</p>
+				</aside>
+				</section>	
+				
+				<section>
+					<h2>Mobile Matters</h2>
+					<ul>
+						<li class="fragment">79% of smartphone users use their phones to help make purchasing decisions (http://googlemobileads.blogspot.ca/2011/12/look-back-at-2011.html)</li>
+						<li class="fragment">Mobile is the way that many will first view the web in places like Africa (get citation)</li>
+						<li class="fragment">Tablet use on the rise in North America (get citation)</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Angelina looks up reviews for video games before she buys them, will look up ingredients on food packaging to know what she's eating</li>
+							<li>Broadband is expensive/difficult to implement in Africa, most web access is via mobile - this has been skyrocketing in recent years!</li>
+						</ul>
+					</aside>
+				</section>
+
+				<section>
+					<h2>How do we make mobile websites?</h2>
+						<ul>
+							<li>Design separate sites for mobile and desktop (sometimes a tablet version too)</li>
+							<li>Mobify it (3rd party)</li>
+							<li>Responsive design</li>
+						</ul>
+					<aside class="notes">
+						<ul><li>Notes?</li></ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Pros and cons of designing separate sites</h2>
+					<h3>Pros</h3>
+					<ul>
+						<li>Best performance</li>
+						<li>Highest level of detail control</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Pros and cons of designing separate sites</h2>
+					<h3>Cons</h3>
+					<ul>
+						<li>Multiple websites to maintain</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Pros and Cons of Mobify (3rd party)</h2>
+					<h3>Pros:</h3>
+					<ul>
+						<li>Derived from existing desktop site</li>
+						<li>Serves up the page to mobile users at the same URL</li>
+						<li>Separate templates mean conditonal content loading</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Pros and Cons of Mobify (3rd party)</h2>
+					<h3>Cons:</h3>
+					<ul>
+						<li>Need moar conssss<li>
+						<li>Can't get to desktop site on mobile (is this true?)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Pros and Cons of Responsive Design</h2>
+					<h3>Pros:</h3>
+					<ul>
+						<li>You only make one website</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Pros and Cons of Responsive Design</h2>
+					<h3>Cons:</h3>
+					<ul>
+						<li>! A con goes here.</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Designing for Mobile</h2>
+					<p>You will get the best results if you design for mobile first.</p>
+					<ul>
+						<li class="fragment">Don't design to a fixed grid and then try to make it fluid later. Fluid grids/layout all the way!
+						<li class="fragment">Assume that you're designing for touch screens (iOS HIG suggests 44px^2)</li>
+						<li class="fragment">Large headings work better on wider layouts</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Angelina tried to do this and it's the wrong way to do it</li>
+							<li>We don't have a truly reliable way to test for touch interaces, though there are libraries (Modernizr) that do a good job, better just to design as though it's a touch interface.</li>
+							<li>Large headings on small screens means unecessary scrolling</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Designing for Mobile</h2>
+					<p class="fragment">You will get the best results if you design for mobile first.</p>
+					<ul>
+						<li class="fragment">Navigation is less important than you think sometimes</li>
+						<li class="fragment">Get rid of superfluous content</li>
+						<li class="fragment">If you're a business: make it easy to find you</li>
+					</ul>
+					<aside class="notes">
+						<ul>
+							<li>Content-first, navigation second for mobile experiences. Don't keep people from what they want. Ever been trying to </li>
+							<li>...But have a link to your desktop site somewhere if you're trimming a lot</li>
+							<li>Many websites direct you to desktop for contact info. Separate contact page is okay if you don't want it taking up space as a footer, but make the way to get there clear as the blinding sun.</li>
+						</ul>
+					</aside>
+				</section>
+				<section>
+					<h2>Bad Examples</h2>
+					<p>
+						Steam Clock website (screen shots) compared against recent redesign mocks. Also can probably find one more bad example on the internet somewhere.
+					</p>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Good Examples</h2>
+					<p class="fragment">createdm.com</p>
+					<p class="fragment">choiceresponse.com</p>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Implementation</h2>
+					<p>
+						Slide about viewport, media queries, mobile-specific stuffs (which we will go on to implement shortly)
+					</p>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					</aside>
+				</section>
+				<section>
+					<h2>Performance</h2>
+					<p>
+						Quick performance tips from Angelina
+					</p>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Good Reads & Resources</h2>
+					<a href="http://bradfrostweb.com/blog/web/responsive-nav-patterns/">Responsive Navigation Patterns</a>
+				</section>
+				
+				<section>
+					<h2>Example of Pretty Code</h2>
+					<pre><code contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+    
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i < len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) ) {
+        node.className += ' roll';
+      }
+    };
+  }
+}
+					</code></pre>
+					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+				</section>				
+				<section>
+					<h1>GO FORTH AND MAKE WONDERFUL THINGS!</h1>
+					<h3 class="inverted">Angelina Fabbro / @angelinamagnum / angelina@steamclocksw.com</h3>
+					<h3 class="inverted">Jacky Gilbertson / @jackygilbertson / jackymakesthings@gmail.com</h3>
+				</section>
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Presentation progress bar -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+
+		<script>
+			// Load reveal.js as well as a classList polyfill if needed
+			head.js( !document.body.classList ? 'lib/js/classList.js' : null )
+				.js( 'js/reveal.js', function() {
+
+				// Parse the query string into a key/value object
+				var query = {};
+				location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+					query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+				} );
+
+				// Fires when a slide with data-state=customevent is activated
+				Reveal.addEventListener( 'customevent', function() {
+					console.log( '"customevent" has fired' );
+				} );
+
+				// Fires each time a new slide is activated
+				Reveal.addEventListener( 'slidechanged', function( event ) {
+					// event.previousSlide, event.currentSlide, event.indexh, event.indexv
+				} );
+
+				// Full list of configuration options available here:
+				// https://github.com/hakimel/reveal.js#configuration
+				Reveal.initialize({
+					controls: true,
+					progress: true,
+					history: true,
+					
+					theme: query.theme || 'default', // default/neon/beige
+					transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+				});
+
+			} );
+			
+			// Load highlight.js for syntax highlighting of code samples
+			head.js( 'lib/js/highlight.js', function() { 
+				hljs.initHighlightingOnLoad(); 
+			} );
+
+			// If we're runnning the notes server we need to include some additional JS
+			// TODO Is there a better way to determine if we're running the notes server?
+			if( window.location.host === 'localhost:1947' ) {
+				head.js( 'socket.io/socket.io.js', 'plugin/speakernotes/client.js' );
+			}
+		</script>
+		
+	</body>
+</html>
