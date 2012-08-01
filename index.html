@@ -41,7 +41,8 @@
 
 				<section>
 					<h2>WELCOME</h2>
-					<p>Maybe a picture here? Hm.</p>
+					<img src="i/pusheen.gif" />
+					<p><small>(image credit: pusheen.com)</small></p>
 				<aside class="notes">
 					<p>Stuff to mention..</p>
 					<p>Schedule: First hour is lecture, then a break, then hands-on walkthrough</p>
@@ -52,17 +53,28 @@
 				<section>
 					<h2>Mobile Matters</h2>
 					<ul>
-						<li class="fragment">79% of smartphone users use their phones to help make purchasing decisions (http://googlemobileads.blogspot.ca/2011/12/look-back-at-2011.html)</li>
-						<li class="fragment">Mobile is the way that many will first view the web in places like Africa (get citation)</li>
-						<li class="fragment">Tablet use on the rise in North America (get citation)</li>
+						<li class="fragment">79% of smartphone users use their phones to help make purchasing decisions <p /><p><small>(http://googlemobileads.blogspot.ca/2011/12/look-back-at-2011.html)</small></p></li>
+						<li class="fragment">Tablet use on the rise in North America (there are TONS of citations for this everywhere on the web)<p><img src="i/mobileusage.jpeg" style="height: 100px"/></p><p><small>http://articles.businessinsider.com/2011-05-25/tech/30020984_1_ipad-kindle-ereaders</small></p></li>
 					</ul>
 					<aside class="notes">
 						<ul>
 							<li>Angelina looks up reviews for video games before she buys them, will look up ingredients on food packaging to know what she's eating</li>
-							<li>Broadband is expensive/difficult to implement in Africa, most web access is via mobile - this has been skyrocketing in recent years!</li>
+							<li>Tablets: popular for games, bedtime reading, casual browsing, email, social networks</li>
 						</ul>
 					</aside>
 				</section>
+
+				<section>
+					<h2>Mobile Matters</h2>
+					<ul>						
+						<li>Mobile is the way that many will first view the web in places like Africa AND second biggest mobile market in the world! <p /><p><small>http://digitaljournal.com/article/314828</small></p></li>
+					</ul>
+					<p><img src="i/ewasteAfrica.jpeg" /></p>
+					<p><small>(photo credit: International Institute for Communication and Development (IICD))</small></p>
+					<aside class="notes">
+						<li>Broadband is expensive/difficult to implement in Africa, most web access is via mobile - this has been skyrocketing in recent years!</li>
+					</aside>
+				</section>	
 
 				<section>
 					<h2>How do we make mobile websites?</h2>
@@ -71,9 +83,6 @@
 							<li>Mobify it (3rd party)</li>
 							<li>Responsive design</li>
 						</ul>
-					<aside class="notes">
-						<ul><li>Notes?</li></ul>
-					</aside>
 				</section>
 				<section>
 					<h2>Pros and cons of designing separate sites</h2>
@@ -88,17 +97,25 @@
 					<h2>Pros and cons of designing separate sites</h2>
 					<h3>Cons</h3>
 					<ul>
-						<li>Multiple websites to maintain</li>
+						<li class="fragment">Multiple websites to maintain</li>
+						<li class="fragment">Poor redirection/no redirection for link sharing</li>
 					</ul>
+					<aside class="notes">
+						<ul>
+							<li class="fragment">Need to to managed multiple versions of content</li>
+							<li class="fragment">Sharing a link via desktop on Twitter and a mobile users clicks on it - shitty experience</li>
+						</ul>
+					</aside>
 				</section>
 
 				<section>
 					<h2>Pros and Cons of Mobify (3rd party)</h2>
 					<h3>Pros:</h3>
 					<ul>
-						<li>Derived from existing desktop site</li>
-						<li>Serves up the page to mobile users at the same URL</li>
-						<li>Separate templates mean conditonal content loading</li>
+						<li class="fragment">Can use it on any existing desktop site, with existing security</li>
+						<li class="fragment">Serves up the page to mobile users at the same URL</li>
+						<li class="fragment">Separate templates mean conditonal content loading</li>
+						<li class="fragment">Transform DOM elements into other DOM elements</li>
 					</ul>
 				</section>
 
@@ -106,8 +123,9 @@
 					<h2>Pros and Cons of Mobify (3rd party)</h2>
 					<h3>Cons:</h3>
 					<ul>
-						<li>Need moar conssss<li>
-						<li>Can't get to desktop site on mobile (is this true?)</li>
+						<li class="fragment">AJAX (content loaded asynchronously by JS) - based sites end up being slower<li>
+						<li class="fragment">Relies on 3rd party Javascript (code could break on upgrade)</li>
+						<li class="fragment">Learning curve - need to be familiar with Javascript, command line tools etc.</li>
 					</ul>
 				</section>
 
@@ -115,7 +133,8 @@
 					<h2>Pros and Cons of Responsive Design</h2>
 					<h3>Pros:</h3>
 					<ul>
-						<li>You only make one website</li>
+						<li class="fragment">You only make one website!</li>
+						<li class="fragment">Not just about the device - resize the browser and it still looks good!</li>
 					</ul>
 				</section>
 
@@ -123,15 +142,22 @@
 					<h2>Pros and Cons of Responsive Design</h2>
 					<h3>Cons:</h3>
 					<ul>
-						<li>! A con goes here.</li>
+						<li class="fragment">Development time</li>
+						<li class="fragment">Worse performance (if you don't know what you're doing)</li>
 					</ul>
+					<aside class="notes">
+						<ul>
+							<li>We're giving you the barebones, but to do a richly interactive site requires a lot of work</li>
+							<li>All the magic to resize and refit the websites (including extra helper scripts) makes website slower - unless you REALLY know what you're doing</li>
+						</ul>
+					</aside>
 				</section>
 				<section>
 					<h2>Designing for Mobile</h2>
 					<p>You will get the best results if you design for mobile first.</p>
 					<ul>
 						<li class="fragment">Don't design to a fixed grid and then try to make it fluid later. Fluid grids/layout all the way!
-						<li class="fragment">Assume that you're designing for touch screens (iOS HIG suggests 44px^2)</li>
+						<li class="fragment">Assume that you're designing for touch screens (iOS HIG suggests 44px^2 as tap target)</li>
 						<li class="fragment">Large headings work better on wider layouts</li>
 					</ul>
 					<aside class="notes">
@@ -148,12 +174,14 @@
 					<ul>
 						<li class="fragment">Navigation is less important than you think sometimes</li>
 						<li class="fragment">Get rid of superfluous content</li>
+						<li class="fragment">Don't be afraid of whitespace</li>
 						<li class="fragment">If you're a business: make it easy to find you</li>
 					</ul>
 					<aside class="notes">
 						<ul>
 							<li>Content-first, navigation second for mobile experiences. Don't keep people from what they want. Ever been trying to </li>
 							<li>...But have a link to your desktop site somewhere if you're trimming a lot</li>
+							<li>Don't cramp up your design</li>
 							<li>Many websites direct you to desktop for contact info. Separate contact page is okay if you don't want it taking up space as a footer, but make the way to get there clear as the blinding sun.</li>
 						</ul>
 					</aside>
@@ -182,27 +210,6 @@
 					<p>
 						Slide about viewport, media queries, mobile-specific stuffs (which we will go on to implement shortly)
 					</p>
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
-					</aside>
-				</section>
-				<section>
-					<h2>Performance</h2>
-					<p>
-						Quick performance tips from Angelina
-					</p>
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
-					</aside>
-				</section>
-
-				<section>
-					<h2>Good Reads & Resources</h2>
-					<a href="http://bradfrostweb.com/blog/web/responsive-nav-patterns/">Responsive Navigation Patterns</a>
-				</section>
-				
-				<section>
-					<h2>Example of Pretty Code</h2>
 					<pre><code contenteditable>
 function linkify( selector ) {
   if( supports3DTransforms ) {
@@ -219,7 +226,40 @@ function linkify( selector ) {
   }
 }
 					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					</aside>
+				</section>
+				<section>
+					<h2>Performance</h2>
+					<p>
+						Quick performance tips from Angelina
+					</p>
+
+					<pre><code contenteditable>
+function linkify( selector ) {
+  if( supports3DTransforms ) {
+    
+    var nodes = document.querySelectorAll( selector );
+
+    for( var i = 0, len = nodes.length; i < len; i++ ) {
+      var node = nodes[i];
+
+      if( !node.className ) ) {
+        node.className += ' roll';
+      }
+    };
+  }
+}
+					</code></pre>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
+					</aside>
+				</section>
+
+				<section>
+					<h2>Good Reads & Resources</h2>
+					<a href="http://bradfrostweb.com/blog/web/responsive-nav-patterns/">Responsive Navigation Patterns</a>
 				</section>				
 				<section>
 					<h1>GO FORTH AND MAKE WONDERFUL THINGS!</h1>
