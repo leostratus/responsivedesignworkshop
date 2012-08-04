@@ -1,7 +1,7 @@
 responsivedesignworkshop
 ========================
 
-A crash course in responsive design with [Angelina Fabbro](angelina@steamclocksw.com) & [Jacky Gilbertson](jackymakesthings@gmail.com). These materials were used for a short tutorial presented courtesy of Women in Computing Science at Simon Fraser University on August 1st, 2012.
+A crash course in responsive design with [Angelina Fabbro](mailto:angelina@steamclocksw.com) & [Jacky Gilbertson](mailto:jackymakesthings@gmail.com). These materials were used for a short tutorial presented courtesy of Women in Computing Science at Simon Fraser University on August 1st, 2012.
 
 How to use this stuff
 ---------
